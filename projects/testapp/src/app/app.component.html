@@ -1,0 +1,10 @@
+<lib-message value="Bonjour message test" severity="error" [closable]="true" />
+<lib-message value="Bonjour message test 2" severity="info" />
+<lib-message value="Bonjour message test 3" severity="success" />
+<lib-message value="Bonjour message test 5" severity="warning" />
+
+<button (click)="addToast()">TEST toast info</button>
+<button (click)="addToast('success')">TEST toast success</button>
+<button (click)="addToast('warning', 'sticky')">TEST toast warning</button>
+
+<lib-toast />

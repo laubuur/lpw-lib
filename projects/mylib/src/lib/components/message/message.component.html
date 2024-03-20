@@ -1,0 +1,8 @@
+@if(showed()) {
+    <div [class]="severity + ' message'" [class.flex]="closable">
+        <div [class.flex-1]="closable">{{value}}</div>
+        @if(closable) {
+            <div (click)="showed.set(false)" class="link"><i class="fa-solid fa-xmark fa-lg"></i></div>
+        }
+    </div>
+}
